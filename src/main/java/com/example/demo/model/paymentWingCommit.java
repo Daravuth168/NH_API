@@ -9,7 +9,7 @@ public class paymentWingCommit {
     String reference_number;
     String customer_name;
     String currency;
-    String amount;
+    float amount;
     String session_id;
     String transaction_id;
 
@@ -18,7 +18,7 @@ public class paymentWingCommit {
     public paymentWingCommit() {
     }
 
-    public paymentWingCommit(String reference_number, String customer_name, String currency, String amount, String session_id, String transaction_id) {
+    public paymentWingCommit(String reference_number, String customer_name, String currency, float amount, String session_id, String transaction_id) {
         this.reference_number = reference_number;
         this.customer_name = customer_name;
         this.currency = currency;
@@ -51,11 +51,11 @@ public class paymentWingCommit {
         this.currency = currency;
     }
 
-    public String getAmount() {
+    public float getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(float amount) {
         this.amount = amount;
     }
 
